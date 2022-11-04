@@ -1,3 +1,9 @@
-// const {task} = require("hardhat/config")
+const { task } = require("hardhat/config")
 
-// task
+task("block-number", "Prints the current block number").setAction(
+    async (taskArgs, hre) => {
+        const blockNumber = await hre.ethers.provider.getBlockNumber()
+        console.log(`block number is: ${blockNumber}`)
+    }
+)
+module.exports = {}
