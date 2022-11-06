@@ -40,5 +40,6 @@ module.exports = {
         currency: "USD",
         coinmarketcap: COINMARKETCAP_API_KEY,
         token: "Matic",
-    },
+    }       
+   
 }
